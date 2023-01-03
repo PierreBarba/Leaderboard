@@ -1,24 +1,24 @@
 {
-  "name": "to-do-list",
+  "name": "todolist",
   "version": "1.0.0",
   "description": "",
-  "private": true,
+  "private": "true",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack serve --open",
-    "build": "webpack"
+    "build": "webpack",
+    "start": "webpack serve --open"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Gdiazdiaz/To-do-list.git"
+    "url": "git+https://github.com/cilfonegabriel/ToDoList.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Gdiazdiaz/To-do-list/issues"
+    "url": "https://github.com/cilfonegabriel/ToDoList/issues"
   },
-  "homepage": "https://github.com/Gdiazdiaz/To-do-list#readme",
+  "homepage": "https://github.com/cilfonegabriel/ToDoList#readme",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.7.2",
@@ -38,6 +38,5 @@
   },
   "dependencies": {
     "lodash": "^4.17.21"
-  },
-  "main": "webpack.config.js"
+  }
 }

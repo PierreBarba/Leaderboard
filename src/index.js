@@ -1,6 +1,6 @@
 import './style.css';
-import displayScores from './displayScore';
-import addScore from './addScore';
+import displayScores from './displayScores.js';
+import addScore from './addScore.js';
 
 const scores = [];
 
