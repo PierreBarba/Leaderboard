@@ -1,7 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
- module.exports = {
+module.exports = {
   mode: 'production',
   entry: './src/index.js',
   entry: {
@@ -15,12 +15,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
       template: './src/index.html',
     }),
   ],
-   output: {
+  output: {
     filename: 'bundle.js',
     filename: '[name].bundle.js',
-     path: path.resolve(__dirname, 'dist'),
-   },
-   module: {
+    path: path.resolve(__dirname, 'dist'),
+  },
+  module: {
     rules: [
       {
         test: /\.css$/i,
@@ -31,4 +31,4 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
   optimization: {
     runtimeChunk: 'single',
   },
- };
+};
