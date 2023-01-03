@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cilfonegabriel/ToDoList.git"
+    "url": "git+https://github.com/PierreBarba/Leaderboard.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cilfonegabriel/ToDoList/issues"
+    "url": "https://github.com/PierreBarba/Leaderboard/issues"
   },
-  "homepage": "https://github.com/cilfonegabriel/ToDoList#readme",
+  "homepage": "https://github.com/PierreBarba/Leaderboard#readme",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.7.2",
