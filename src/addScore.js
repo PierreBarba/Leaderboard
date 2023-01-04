@@ -1,7 +1,7 @@
 const addScore = async (name, score) => {
   try {
     const result = await fetch(
-      'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/8JhHA34HgMYFDMscfBTm/scores',
+      'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/PierreGamePsp99/scores',
       {
         method: 'POST',
         headers: {
