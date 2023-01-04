@@ -13,10 +13,9 @@ const displayScores = async () => {
     li.innerHTML = `${data.result[i].user}: ${data.result[i].score}`;
     sectionForScores.appendChild(li);
   }
-}
+};
 
 displayScores();
-
 
 const myForm = document.getElementById('my-form');
 myForm.addEventListener('submit', (e) => {
