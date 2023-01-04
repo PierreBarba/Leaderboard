@@ -14,9 +14,7 @@ const displayScores = async () => {
     sectionForScores.appendChild(li);
   }
 };
-
 displayScores();
-
 const myForm = document.getElementById('my-form');
 myForm.addEventListener('submit', (e) => {
   e.preventDefault();
