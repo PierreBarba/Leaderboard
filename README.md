@@ -57,15 +57,16 @@
 
 <!-- GETTING STARTED -->
 
-## 💻 Getting Started <a name="getting-started"></a>
+## 💻 How to get a local copy and get started <a name="getting-started"></a>
 
 
 To get a local copy up and running, follow these steps.
 
-git clone ...
-cd ...
-npm install
-npm run start
+- git clone 
+- move to your path where you have the file with the cd command
+- npm install
+- npm run build
+- npm start
 
 
 
