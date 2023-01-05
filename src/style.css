@@ -5,7 +5,7 @@ body {
 }
 
 .wrapper {
-  background:linear-gradient(180deg, rgba(2, 0, 0.6, 1) 0%, rgba(9, 9, 121, 1) 50%, rgb(115, 1, 255) 73%, rgb(230, 35, 181) 88%, rgb(239, 54, 29) 100%);
+  background: linear-gradient(180deg, rgba(2, 0, 0.6, 1) 0%, rgba(9, 9, 121, 1) 50%, rgb(115, 1, 255) 73%, rgb(230, 35, 181) 88%, rgb(239, 54, 29) 100%);
   position: absolute;
   width: 100%;
   height: 100%;
