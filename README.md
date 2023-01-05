@@ -62,13 +62,10 @@
 To get a local copy up and running, follow these steps.
 
 
-git clone https://github.com/PierreBarba/Leaderboard.git
-cd Leaderboard
-npm install
-npm run start
-
-
-
+- git clone https://github.com/PierreBarba/Leaderboard.git
+- cd Leaderboard
+- npm install
+- npm run start
 
 <!-- AUTHORS -->
 
