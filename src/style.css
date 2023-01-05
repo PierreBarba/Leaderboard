@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   z-index: -1;
+  box-sizing: border-box;
 }
 
 .wrapper {
@@ -167,7 +168,7 @@ body {
   border-radius: 62px;
   width: 117px;
   height: 28px;
-  margin: 39px 19px 28px 48px;
+  margin: 39px 19px 28px 250px;
 }
 
 .score-button::before {
