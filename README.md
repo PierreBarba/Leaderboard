@@ -57,7 +57,7 @@
 
 <!-- GETTING STARTED -->
 
-## 💻 Getting Started <a name="getting-started"></a>
+## 💻 How to get a local copy and get started <a name="getting-started"></a>
 
 
 To get a local copy up and running, follow these steps.
