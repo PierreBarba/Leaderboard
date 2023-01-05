@@ -39,9 +39,8 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[dawesome]**
-- **[webpack]**
-- **[functional]**
+- **Add leaders to the board**
+- **Display list of Leaders**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -62,8 +61,8 @@
 
 To get a local copy up and running, follow these steps.
 
-git clone ...
-cd ...
+git clone https://github.com/PierreBarba/Leaderboard.git
+cd Leaderboard
 npm install
 npm run start
 
