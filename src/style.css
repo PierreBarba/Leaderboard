@@ -147,6 +147,7 @@ body {
   overflow-y: scroll;
   height: 200px;
   list-style: none;
+  width: 467px;
 }
 
 #score-container li:nth-child(odd) {
