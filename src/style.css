@@ -1,16 +1,136 @@
+body {
+ margin:0;
+ padding: 0;
+ z-index: -1;
+}
+
+.wrapper{
+  background: linear-gradient(180deg, rgba(2,0,.6,1) 0%, rgba(9,9,121,1) 27%, rgb(115, 1, 255) 50%, rgb(230, 35, 181) 75%, rgb(239, 54, 29) 100%);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.box div{
+  z-index: -1;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  border: 3px solid rgba(255,255,255,0.8);
+}
+
+.box div:nth-child(1){
+  top: 12%;
+  left: 42%;
+  animation: animate 10s linear infinite;
+}
+
+.box div:nth-child(2){
+  border-radius: 62px;
+  top: 70%;
+  left: 50%;
+  animation: animate 7s linear infinite;
+}
+
+.box div:nth-child(3){
+  top: 17%;
+  left: 6%;
+  animation: animate 9s linear infinite;
+}
+
+.box div:nth-child(4){
+  border-radius: 62px;
+  top: 20%;
+  left: 60%;
+  animation: animate 10s linear infinite;
+}
+
+.box div:nth-child(5){
+  top: 67%;
+  left: 10%;
+  animation: animate 6s linear infinite;
+}
+
+.box div:nth-child(6){
+  border-radius: 62px;
+  top: 80%;
+  left: 70%;
+  animation: animate 12s linear infinite;
+}
+
+.box div:nth-child(7){
+  top: 60%;
+  left: 80%;
+  animation: animate 15s linear infinite;
+}
+
+.box div:nth-child(8){
+  border-radius: 62px;
+  top: 32%;
+  left: 25%;
+  animation: animate 16s linear infinite;
+}
+
+.box div:nth-child(9){
+  top: 90%;
+  left: 25%;
+  animation: animate 12s linear infinite;
+}
+
+.box div:nth-child(10){
+  border-radius: 62px;
+  top: 20%;
+  left: 80%;
+  animation: animate 5s linear infinite;
+}
+
+.book-card:nth-child(even) {
+  background: rgb(255, 255, 255);
+}
+
+@keyframes animate{
+  0%{
+    transform: scale(0) translateY(0) rotate(0);
+    opacity: 1;
+  }
+  100%{
+    transform: scale(1.3) translateY(-90px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+
 .page-container {
   display: flex;
   justify-content: space-around;
 }
 
 .page-title {
+  font-family:system-ui;
   margin-left: 20px;
+  color: aliceblue;
+  text-align: center;
+  margin: 22px -72px 16px 0px;
 }
 
-.scores-container {
-  display: flex;
-  flex-direction: column;
+
+.score-title {
+  font-family: system-ui;
+    color: aliceblue;
+    font-size: 25px;
+}  
+
+#add-h2 {
+  font-family: system-ui;
+  color: aliceblue;
+  font-size: 20px;
+  text-align-last: center;
+  margin: 42px 0px 32px 0px;
 }
+
 
 .recent-scores {
   display: flex;
@@ -18,27 +138,126 @@
 }
 
 #score-container {
+  font-family:system-ui;
+  color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
   gap: 12px;
-  border: solid #000 2px;
+  border: solid rgb(255, 255, 255) 2px;
   padding: 5px;
-}
-
-.list-item {
+  text-align: center;
+  margin: 0 auto;
+  overflow-y: scroll;
+  height: 200px;
   list-style: none;
 }
 
+  #score-container li:nth-child(odd) {
+    background-color: rgb(255, 255, 255);
+    color: black;
+  }
+
 .score-button {
-  align-self: center;
+  font-family: system-ui;
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+    border: none;
+    color: rgb(251, 249, 249);
+    font-size: 10px;
+    font-weight: bold;
+    position: relative;
+    border-radius: 62px;
+    width: 117px;
+    height: 28px;
+    margin: 39px 19px 28px 48px;
 }
+
+.score-button::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgb(212, 255, 0), rgb(255, 0, 238), rgb(255, 28, 20),rgb(212, 255, 0), rgb(255, 0, 238), rgb(255, 28, 20));
+  background-size: 800%;
+  filter: blur(8px);
+  animation: glowing 20s linear infinite;
+}
+
+@keyframes glowing {
+  0% {
+      background-position: 0 0;
+  }
+  50% {
+      background-position: 400% 0;
+  }
+  100% {
+      background-position: 0 0;
+  }
+}    
+
 
 #my-form {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
+#name{
+background-color: black;
+color: aliceblue;
+}
+
+#score{
+  background-color: black;
+  color: aliceblue;
+}
+
 
 #add-button {
   align-self: flex-end;
 }
+
+#add-button { 
+  font-family: system-ui;
+  background-color: rgb(0, 0, 0);
+  cursor: pointer;
+  border: none;
+  color: rgb(251, 249, 249);
+  font-size: 10px;
+  font-weight: bold;
+  position: relative;
+  border-radius: 62px;
+  width: 117px;
+  height: 28px;
+  margin: 6px 37px 0px 44px;
+}
+
+
+
+#add-button::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, red, blue, deeppink,red, blue, deeppink);
+  background-size: 800%;
+  filter: blur(8px);
+  animation: glowing 20s linear infinite;
+}
+
+@keyframes glowing {
+  0% {
+      background-position: 0 0;
+  }
+  50% {
+      background-position: 400% 0;
+  }
+  100% {
+      background-position: 0 0;
+  }
+}    

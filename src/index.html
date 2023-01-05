@@ -3,14 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Geostar+Fill&family=Inter:wght@300;400&family=Press+Start+2P&display=swap" rel="stylesheet">
     <title>Leader Board</title>
 </head>
 <body>
+    <div class="wrapper">
+        <div class="box">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     <div id="content"><h1 class="page-title">Leaderboard</h1>
         <div class="page-container">
             <div class="scores-container">
                 <div class="recent-scores">
-                    <h2 class="score-title">Recent scores</h2>
+                    <h2 class="score-title">Recent <br> scores</h2>
                     <button class="score-button">Refresh</button>
                 </div>
                 <div id="score-container">
@@ -18,13 +32,15 @@
                 </div>
             </div>
             <div class="add-container">
-                <h2>Add your score</h2>
+                <h2 id="add-h2">Add your score</h2>
                 <form id="my-form">
                 <input id="name" type="text" name="name" placeholder="Your name">
                 <input id="score" type="text" name="score" placeholder="Your score">
-                <button type="submit" id="add-button">Add</button>
+                <button  class="add" type="submit" id="add-button">Add</button>
                 </form>
             </div>
-        </div></div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
